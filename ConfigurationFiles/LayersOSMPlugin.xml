@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+   Copyright CompeGPS Team SL(www.compegps.com)
+
+   Licensed under the GNU Lesser General Public License (LGPL)
+   You may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.gnu.org/licenses/lgpl.html
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+ -->
+<osm>
+	<config>
+		<icons file="poiicons.zip"/>
+	</config>
+	<layers>
+		<layer_type id="physical">
+			<feature id="main_layers">
+				<layer id="Polygons" layerid="1000" name="{U34}" />
+				<layer id="Boundaries" layerid="10400" name="{U33}" />
+				<layer id="Roads" layerid="11000" name="{U2}" />
+				<layer id="Other_Roads" layerid="4000" name="{H890}" />
+				<layer id="POIs" layerid="10300" name="POIs" icon="7316" />
+				<layer id="Others" layerid="16000" name="{R175}" />			
+				<layer id="Places" layerid="8192" name="{I59}" />		
+			</feature>		
+			<feature id="aerialway">
+				<layer id="aerialway_cable_car" layerid="10101" near_zoom="50.000" name="{H913}" line_type="1" parent_layer_id="16000" />			
+				<layer id="aerialway_chair_lift" layerid="10102" near_zoom="50.000" name="chair lift" line_type="1" parent_layer_id="16000" />			
+				<layer id="aerialway_gondola" layerid="10103" near_zoom="50.000" name="gondola" line_type="1" parent_layer_id="16000" />			
+				<layer id="aerialway_platter" layerid="10104" near_zoom="50.000" name="platter" line_type="1" parent_layer_id="16000" />			
+				<layer id="aerialway_pylon" layerid="10105" near_zoom="50.000" name="pylon" line_type="1" parent_layer_id="16000" />			
+			</feature>		
+			<feature id="aeroway">
+				<layer id="aeroway_runway" layerid="10201" fill_color_r="224" fill_color_g="238" fill_color_b="224" near_zoom="100.000" pixel_thickness="12" real_thickness="12" name="{H438}" line_type="6" parent_layer_id="16000" />
+				<layer id="aeroway_taxiway" layerid="10202" fill_color_r="224" fill_color_g="238" fill_color_b="224" near_zoom="80.000" pixel_thickness="6" real_thickness="8" name="{H914}" line_type="6" parent_layer_id="16000" />
+				<layer id="aeroway_terminal" layerid="10203" type="1" color_r="205" color_g="150" color_b="205" fill_color_r="205" fill_color_g="105" fill_color_b="205" near_zoom="60.000" name="{U232}" line_type="0" parent_layer_id="16000" />
+				<layer id="aeroway_apron" layerid="10204" type="1" color_r="236" color_g="200" color_b="236" fill_color_r="236" fill_color_g="200" fill_color_b="236" near_zoom="60.000" name="{H915}" line_type="0" parent_layer_id="16000" />			
+			</feature>
+			<feature id="places">
+				<layer id="city" layerid="8193" draw_texts="true" type="4" near_zoom="300.000" name="{U76}" icon="City (Large)" parent_layer_id="8192" />			
+				<layer id="town" layerid="8194" draw_texts="true" type="4" near_zoom="100.000" name="{U77}" icon="City (Large)" parent_layer_id="8192" />
+				<layer id="village" layerid="8195" draw_texts="true" type="4" near_zoom="50.000" name="{U78}" icon="City (Medium)" parent_layer_id="8192" />
+				<layer id="hamlet" layerid="8196" draw_texts="true" type="4" near_zoom="25.000" name="{U229}" icon="City (Small)" parent_layer_id="8192" />
+				<layer id="continent" layerid="8197" draw_texts="true" type="4" name="{H907}" icon="city_l" parent_layer_id="8192" />
+				<layer id="country" layerid="8198" draw_texts="true" type="4" near_zoom="900.000" icon="city_m" name="{E275}" parent_layer_id="8192" />
+				<layer id="island" layerid="8199" draw_texts="true" type="4" near_zoom="900.000" name="{H908}" icon="city_s" parent_layer_id="8192" />
+				<layer id="locality" layerid="8200" type="4" near_zoom="25.000" name="{H918}" icon="City (Small)"  parent_layer_id="8192" />
+				<layer id="islet" layerid="8201" type="4" near_zoom="50.000" name="{H909}" icon="city_s" parent_layer_id="8192" />			
+			</feature>						
+			<feature id="amenity">
+				<layer id="bench" layerid="10301" type="3" near_zoom="2.000" name="{H900}" icon="9352" parent_layer_id="10300" />		
+				<layer id="parking" layerid="10302" type="3" near_zoom="2.000" name="{U177}" icon="9930" parent_layer_id="10300" />
+				<layer id="restaurant" layerid="10304" type="3" near_zoom="2.000" name="{U81}" icon="7315" parent_layer_id="10300" />	
+				<layer id="bank" layerid="10305" type="3" near_zoom="2.000" name="{H901}" icon="7328" parent_layer_id="10300" />
+				<layer id="atm" layerid="10306" type="3" near_zoom="2.000" name="{U123}" icon="7375" parent_layer_id="10300" />
+				<layer id="hospital" layerid="10307" type="3" near_zoom="25.000" name="{U44}" icon="7325" parent_layer_id="10300" />
+				<layer id="post_office" layerid="10308" type="3" near_zoom="2.000" name="{U128}" icon="7324" parent_layer_id="10300" />
+				<layer id="post_box" layerid="10309" type="3" near_zoom="2.000" name="{H902}" icon="9377" parent_layer_id="10300" />
+				<layer id="school" layerid="10310" type="3" near_zoom="2.000" name="{U131}" icon="7372" parent_layer_id="10300" />
+				<layer id="college" layerid="10311" type="3" near_zoom="2.000" name="{U131}" icon="7319" parent_layer_id="10300" />
+				<layer id="fuel" layerid="10312" type="3" near_zoom="5.000" name="{U85}" icon="7311" parent_layer_id="10300" />
+				<layer id="place_of_worship" layerid="10313" type="3" near_zoom="2.000" name="{U171}" icon="7339" parent_layer_id="10300" />
+				<layer id="car_rental" layerid="10314" type="3" near_zoom="2.000" name="{U91}" icon="7312" parent_layer_id="10300" />	
+				<layer id="fast_food" layerid="10315" type="3" near_zoom="2.000" name="{U222}" icon="7315" parent_layer_id="10300" />
+				<layer id="information" layerid="10316" type="3" near_zoom="5.000" name="{U314}" icon="7316" parent_layer_id="10300" />
+				<layer id="bus_stop" layerid="10317" type="3" near_zoom="2.000" name="{U83}" icon="7384" parent_layer_id="10300" />
+				<layer id="public_building" layerid="10318" type="3" near_zoom="2.000" name="{U175}" icon="9352" parent_layer_id="10300" />
+				<layer id="townhall" layerid="10319" type="3" near_zoom="2.000" name="{U132}" icon="7317" parent_layer_id="10300" />			
+				<layer id="cafe" layerid="10320" type="3" near_zoom="2.000" name="{H903}" icon="9376" parent_layer_id="10300" />
+				<layer id="bar" layerid="10321" type="3" near_zoom="2.000" name="{U279}" icon="9376" parent_layer_id="10300" />
+				<layer id="pub" layerid="10322" type="3" near_zoom="2.000" name="{H904}" icon="9379" parent_layer_id="10300" />
+				<layer id="pharmacy" layerid="10323" type="3" near_zoom="2.000" name="{U120}" icon="7326" parent_layer_id="10300" />
+				<layer id="amenity_parking" layerid="10324" type="1" color_r="243" color_g="232" color_b="142" fill_color_r="243" fill_color_g="232" fill_color_b="142" near_zoom="5.000" name="{U90}" line_type="0" parent_layer_id="1000" />
+				<layer id="peak" layerid="10325" type="3" near_zoom="25.000" name="{U244}" icon="9935" parent_layer_id="10300" />
+				<layer id="amenity_public_building" layerid="10326" type="1" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="5.000" pixel_thickness="2" name="{U318}" line_type="0" parent_layer_id="1000" />			
+				<layer id="toilets" layerid="10327" type="3" near_zoom="2.000" name="toilets" parent_layer_id="10300" />
+				<layer id="theatre" layerid="10329" type="3" near_zoom="25.000" name="theatre" icon="7377" parent_layer_id="10300" />
+			</feature>
+			<feature id="boundary">
+				<layer id="boundary_administrative" layerid="10401" color_r="259" color_g="95" color_b="259" near_zoom="100.000" name="{U0}" line_type="3" parent_layer_id="10400" />		
+				<layer id="boundary_maritime" layerid="10402" color_g="134" color_b="255" name="{H886}" line_type="0" parent_layer_id="10400" />		
+			</feature>
+			<feature id="building">
+				<layer id="building_yes" layerid="10601" type="1" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="5.000" draw_texts="true" pixel_thickness="2" name="{U175}" line_type="0" parent_layer_id="1000" />			
+			</feature>		
+			<feature id="barrier">
+				<layer id="barrier_wall" layerid="10701" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="5.000" pixel_thickness="2" name="wall" line_type="0" parent_layer_id="16000" />			
+			</feature>		
+			<feature id="highway">
+				<layer id="highway_unclassified" layerid="11009" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="6" real_thickness="4" name="{H887}" line_type="6" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" />
+				<layer id="round_highway_unclassified" layerid="11009" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="6" real_thickness="4" name="{H887}" line_type="6" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" roundabout="true" />
+				<layer id="tunnel_highway_unclassified" layerid="11009" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="6" real_thickness="4" name="{H887}" line_type="6" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" tunnel="true" />			
+				<layer id="highway_service" layerid="11008" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="3" name="{U183}" line_type="6" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" />
+				<layer id="round_highway_service" layerid="11008" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="3" name="{U183}" line_type="6" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" roundabout="true" />
+				<layer id="tunnel_highway_service" layerid="11008" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="3" name="{U183}" line_type="6" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" tunnel="true" />
+				<layer id="highway_residential" layerid="11007" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="6" real_thickness="4" name="{H888}" line_type="6" usable_routing="1" max_speed="50" route_param="true" parent_layer_id="11000" />
+				<layer id="round_highway_residential" layerid="11007" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="6" real_thickness="4" name="{H888}" line_type="6" usable_routing="1" max_speed="50" route_param="true" parent_layer_id="11000" roundabout="true" />
+				<layer id="tunnel_highway_residential" layerid="11007" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="6" real_thickness="4" name="{H888}" line_type="6" usable_routing="1" max_speed="50" route_param="true" parent_layer_id="11000" tunnel="true" />
+				<layer id="highway_road" layerid="11006" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="6" real_thickness="4" name="{U68}" line_type="6" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" />
+				<layer id="round_highway_road" layerid="11006" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="6" real_thickness="4" name="{U68}" line_type="6" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" roundabout="true" />
+				<layer id="tunnel_highway_road" layerid="11006" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="6" real_thickness="4" name="{U68}" line_type="6" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" tunnel="true" />			
+				<layer id="highway_tertiary" layerid="11005" color_r="252" color_g="209" color_b="22" near_zoom="30.000" pixel_thickness="3" real_thickness="4" name="{H889}" line_type="0" usable_routing="1" max_speed="90" route_param="true" parent_layer_id="11000" />
+				<layer id="highway_tertiary_link" layerid="11005" color_r="252" color_g="209" color_b="22" near_zoom="30.000" pixel_thickness="3" real_thickness="4" name="{H889}" line_type="0" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" ramp="true"/>			
+				<layer id="round_highway_tertiary" layerid="11005" color_r="252" color_g="209" color_b="22" near_zoom="30.000" pixel_thickness="3" real_thickness="4" name="{H889}" line_type="0" usable_routing="1" max_speed="90" route_param="true" parent_layer_id="11000" roundabout="true" />
+				<layer id="tunnel_highway_tertiary" layerid="11005" color_r="252" color_g="209" color_b="22" near_zoom="30.000" pixel_thickness="3" real_thickness="4" name="{H889}" line_type="0" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" tunnel="true" />
+				<layer id="highway_secondary" layerid="11004" color_r="255" color_g="196" color_b="105" near_zoom="40.000" pixel_thickness="4" real_thickness="4" name="{U7}" line_type="0" usable_routing="1" max_speed="90" route_param="true" parent_layer_id="11000" />
+				<layer id="highway_secondary_link" layerid="11004" color_r="255" color_g="196" color_b="105" near_zoom="40.000" pixel_thickness="4" real_thickness="4" name="{U7}" line_type="0" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" ramp="true"/>			
+				<layer id="round_highway_secondary" layerid="11004" color_r="255" color_g="196" color_b="105" near_zoom="40.000" pixel_thickness="4" real_thickness="4" name="{U7}" line_type="0" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" roundabout="true" />
+				<layer id="tunnel_highway_secondary" layerid="11004" color_r="255" color_g="196" color_b="105" near_zoom="40.000" pixel_thickness="4" real_thickness="4" name="{U7}" line_type="0" usable_routing="1" max_speed="90" route_param="true" parent_layer_id="11000" tunnel="true" />
+				<layer id="highway_primary" layerid="11003" color_r="205" color_g="85" color_b="85" near_zoom="60.000" pixel_thickness="6" real_thickness="4" name="{U6}" line_type="0" usable_routing="1" max_speed="90" route_param="true" parent_layer_id="11000" />
+				<layer id="highway_primary_link" layerid="11003" color_r="205" color_g="85" color_b="85" near_zoom="60.000" pixel_thickness="6" real_thickness="4" name="{U6}" line_type="0" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" ramp="true"/>			
+				<layer id="round_highway_primary" layerid="11003" color_r="205" color_g="85" color_b="85" near_zoom="60.000" pixel_thickness="6" real_thickness="4" name="{U6}" line_type="0" usable_routing="1" max_speed="60" route_param="true" parent_layer_id="11000" roundabout="true" />
+				<layer id="tunnel_highway_primary" layerid="11003" color_r="205" color_g="85" color_b="85" near_zoom="60.000" pixel_thickness="6" real_thickness="4" name="{U6}" line_type="0" usable_routing="1" max_speed="90" route_param="true" parent_layer_id="11000" tunnel="true" />
+				<layer id="highway_trunk" layerid="11002" fill_color_r="155" fill_color_g="205" fill_color_b="155" near_zoom="100.000" pixel_thickness="8" real_thickness="6" name="{U5}" line_type="6" usable_routing="2" max_speed="100" route_param="true" parent_layer_id="11000" />
+				<layer id="highway_trunk_link" layerid="11002" fill_color_r="155" fill_color_g="205" fill_color_b="155" near_zoom="100.000" pixel_thickness="8" real_thickness="6" name="{U5}" line_type="6" usable_routing="2" max_speed="60" route_param="true" parent_layer_id="11000" ramp="true"/>			
+				<layer id="round_highway_trunk" layerid="11002" fill_color_r="155" fill_color_g="205" fill_color_b="155" near_zoom="60.000" pixel_thickness="8" real_thickness="6" name="{U5}" line_type="6" usable_routing="2" max_speed="100" route_param="true" parent_layer_id="11000" roundabout="true" />
+				<layer id="tunnel_highway_trunk" layerid="11002" fill_color_r="155" fill_color_g="205" fill_color_b="155" near_zoom="100.000" pixel_thickness="8" real_thickness="6" name="{U5}" line_type="6" usable_routing="2" max_speed="100" route_param="true" parent_layer_id="11000" tunnel="true" />
+				<layer id="highway_motorway" layerid="11001" fill_color_r="89" fill_color_g="147" fill_color_b="229" near_zoom="15000.000" pixel_thickness="8" real_thickness="6" name="{U4}" line_type="6" usable_routing="2" max_speed="120" route_param="true" parent_layer_id="11000" />
+				<layer id="highway_motorway_link" layerid="11001" fill_color_r="89" fill_color_g="147" fill_color_b="229" near_zoom="15000.000" pixel_thickness="8" real_thickness="6" name="{U4}" line_type="6" usable_routing="2" max_speed="60" route_param="true" parent_layer_id="11000" ramp="true"/>			
+				<layer id="round_highway_motorway" layerid="11001" fill_color_r="89" fill_color_g="147" fill_color_b="229" near_zoom="15000.000" pixel_thickness="8" real_thickness="6" name="{U4}" line_type="6" usable_routing="2" max_speed="60" route_param="true" parent_layer_id="11000" roundabout="true" />
+				<layer id="tunnel_highway_motorway" layerid="11001" fill_color_r="89" fill_color_g="147" fill_color_b="229" near_zoom="15000.000" pixel_thickness="8" real_thickness="6" name="{U4}" line_type="6" usable_routing="2" max_speed="120" route_param="true" parent_layer_id="11000" tunnel="true" />
+				<layer id="highway_track" layerid="11010" color_r="217" color_g="135" color_b="25" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{I264}" line_type="1" usable_routing="5" parent_layer_id="4000" unpaved="true"/>
+				<layer id="round_highway_track" layerid="11010" color_r="217" color_g="135" color_b="25" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{I264}" line_type="1" usable_routing="5" route_param="true" parent_layer_id="4000" roundabout="true" unpaved="true"/>
+				<layer id="tunnel_highway_track" layerid="11010" color_r="186" color_g="186" color_b="186" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{I264}" line_type="1" usable_routing="5" route_param="true" parent_layer_id="4000" tunnel="true" unpaved="true"/>			
+				<layer id="highway_pedestrian" layerid="11011" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{R118}" line_type="6" usable_routing="5" route_param="true" parent_layer_id="4000" />
+				<layer id="tunnel_highway_pedestrian" layerid="11011" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{R118}" line_type="6" usable_routing="5" route_param="true" parent_layer_id="4000" tunnel="true" />
+				<layer id="highway_footway" layerid="11012" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{U11}" line_type="6" usable_routing="5" route_param="true" parent_layer_id="4000" />
+				<layer id="tunnel_highway_footway" layerid="11012" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{U11}" line_type="2" usable_routing="5" route_param="true" parent_layer_id="4000" tunnel="true" />
+				<layer id="highway_path" layerid="11013" color_r="99" color_g="99" color_b="99" near_zoom="25.000" pixel_thickness="3" real_thickness="2" name="{H891}" line_type="2" usable_routing="5" route_param="true" parent_layer_id="4000" unpaved="true"/>
+				<layer id="tunnel_highway_path" layerid="11013" color_r="186" color_g="186" color_b="186" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{H891}" line_type="2" usable_routing="5" route_param="true" parent_layer_id="4000" tunnel="true" unpaved="true"/>
+				<layer id="highway_cycleway" layerid="11014" color_r="155" color_g="205" color_b="155" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="20.000" pixel_thickness="3" real_thickness="2" name="{H490}" line_type="0" usable_routing="5" parent_layer_id="4000" />
+				<layer id="highway_steps" layerid="11015" color_r="99" color_g="99" color_b="99" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{H892}" line_type="2" usable_routing="5" route_param="true" parent_layer_id="4000" unpaved="true"/>
+				<layer id="highway_bridleway" layerid="11016" color_r="155" color_g="205" color_b="155" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="bridleway" line_type="2" usable_routing="5" parent_layer_id="4000" unpaved="true"/>
+				<layer id="highway_construction" layerid="11017"  color_r="217" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="25.000" pixel_thickness="5" real_thickness="5" name="construction" line_type="1" usable_routing="5" parent_layer_id="4000" unpaved="true"/>
+				<layer id="highway_living_street" layerid="11008" color_r="170" color_g="170" color_b="170" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="6" real_thickness="4" name="living street" line_type="6" usable_routing="1" max_speed="50" route_param="true" parent_layer_id="11000" />			
+				<layer id="hiking" layerid="11040" name="{H492}" parent_layer_id="4000" />			
+				<layer id="highway_sac_scale_0" layerid="11041" color_r="155" color_g="205" color_b="155" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H492}" line_type="2" usable_routing="5" parent_layer_id="11040" />
+				<layer id="highway_sac_scale_1" layerid="11042" color_r="143" color_g="188" color_b="143" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H893}" line_type="2" transparency="125" usable_routing="5" parent_layer_id="11040" />
+				<layer id="highway_sac_scale_2" layerid="11043" color_g="205" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H894}" line_type="2" transparency="125" usable_routing="5" parent_layer_id="11040" />
+				<layer id="highway_sac_scale_3" layerid="11044" color_g="153" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H895}" line_type="2" transparency="125" usable_routing="5" parent_layer_id="11040" />
+				<layer id="highway_sac_scale_4" layerid="11045" color_g="100" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H896}" line_type="2" transparency="125" usable_routing="5" parent_layer_id="11040" />
+				<layer id="highway_sac_scale_5" layerid="11046" color_r="50" color_g="79" color_b="23" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H897}" line_type="2" transparency="125" usable_routing="5" parent_layer_id="11040" />			
+				<layer id="mtb tracks" layerid="11050" pixel_thickness="0" name="{H489}" parent_layer_id="4000" />			
+				<layer id="highway_mtb:scale_0" layerid="11051" color_r="170" color_g="170" color_b="255" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H898} 0" line_type="22" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale_1" layerid="11052" color_r="102" color_g="102" color_b="255" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H898} 1" line_type="22" transparency="125" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale_2" layerid="11053" color_r="51" color_g="51" color_b="255" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H898} 2" line_type="22" transparency="125" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale_3" layerid="11054" color_b="238" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H898} 3" line_type="22" transparency="125" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale_4" layerid="11055" color_b="156" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H898} 4" line_type="22" transparency="125" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale_5" layerid="11056" color_b="128" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="{H898} 5" line_type="22" transparency="125" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale:uphill_0" layerid="11057" color_r="255" color_g="193" color_b="193" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{H899} 0" line_type="22" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale:uphill_1" layerid="11058" color_r="255" color_g="102" color_b="102" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{H899} 1" line_type="22" transparency="125" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale:uphill_2" layerid="11059" color_r="255" color_g="51" color_b="51" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{H899} 2" line_type="22" transparency="125" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale:uphill_3" layerid="11060" color_r="255" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{H899} 3" line_type="22" transparency="125" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale:uphill_4" layerid="11061" color_r="205" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{H899} 4" line_type="22" transparency="125" usable_routing="5" parent_layer_id="11050" />
+				<layer id="highway_mtb:scale:uphill_5" layerid="11062" color_r="128" fill_color_r="255" fill_color_g="255" fill_color_b="255" near_zoom="15.000" pixel_thickness="3" real_thickness="2" name="{H899} 5" line_type="22" transparency="125" usable_routing="5" parent_layer_id="11050" />	
+				<layer id="sport" layerid="11100" pixel_thickness="0" name="sport" parent_layer_id="4000" />			
+				<layer id="sport_skiing" layerid="11101" color_r="170" color_g="0" color_b="0" near_zoom="15.000" pixel_thickness="4" real_thickness="2" name="skiing" line_type="22" usable_routing="5" parent_layer_id="11100" />		
+			</feature>
+			<feature id="landuse">
+				<layer id="landuse_forest" layerid="11201" type="1" color_r="140" color_g="221" color_b="129" fill_color_r="140" fill_color_g="221" fill_color_b="140" near_zoom="150.000" name="{U37}" line_type="0" parent_layer_id="1000" />		
+				<layer id="landuse_residential" layerid="11202" type="1" color_r="224" color_g="224" color_b="224" fill_color_r="224" fill_color_g="224" fill_color_b="224" near_zoom="5.000" pixel_thickness="0" name="{H883}" line_type="0" parent_layer_id="1000" />
+				<layer id="landuse_farm" layerid="11203" type="1" color_r="208" color_g="183" color_b="158" fill_color_r="208" fill_color_g="183" fill_color_b="158" near_zoom="5.000" name="{H884}" line_type="0" parent_layer_id="1000" />
+				<layer id="landuse_reservoir" layerid="11306" type="1" color_r="67" color_g="114" color_b="170" fill_color_r="122" fill_color_g="169" fill_color_b="221" near_zoom="25.000" name="{U276}" line_type="0" parent_layer_id="1000" />			
+				<layer id="landuse_grass" layerid="11207" type="1" color_g="201" fill_color_g="250" near_zoom="150.000" name="grass" line_type="0" parent_layer_id="1000" />		
+			</feature>
+			<feature id="leisure">
+				<layer id="leisure_park" layerid="11301" type="1" color_r="99" color_g="171" color_b="98" fill_color_r="144" fill_color_g="238" fill_color_b="144" near_zoom="150.000" name="{U134}" line_type="0" parent_layer_id="1000" />
+				<layer id="leisure_swimming_pool" layerid="11302" type="1" color_r="92" color_g="178" color_b="238" fill_color_r="92" fill_color_g="178" fill_color_b="238" near_zoom="5.000" name="{U249}" line_type="0" parent_layer_id="1000" />
+				<layer id="leisure_garden" layerid="11303" type="1" color_r="99" color_g="171" color_b="98" fill_color_r="112" fill_color_g="219" fill_color_b="147" near_zoom="25.000" name="{U48}" line_type="0" parent_layer_id="1000" />
+				<layer id="leisure_golf_course" layerid="11304" type="1" color_r="99" color_g="171" color_b="98" fill_color_r="147" fill_color_g="219" fill_color_b="112" near_zoom="25.000" name="{U109}" line_type="0" parent_layer_id="1000" />
+				<layer id="leisure_stadium" layerid="11305" type="1" color_r="99" color_g="171" color_b="98" fill_color_r="146" fill_color_g="206" fill_color_b="166" near_zoom="10.000" name="{U248}" line_type="0" parent_layer_id="1000" />
+				<layer id="leisure_sports_centre" layerid="11305" type="1" color_r="99" color_g="171" color_b="98" fill_color_r="146" fill_color_g="206" fill_color_b="166" near_zoom="10.000" name="{U108}" line_type="0" parent_layer_id="1000" />
+				<layer id="leisure_pitch" layerid="11305" type="1" color_r="99" color_g="171" color_b="98" fill_color_r="146" fill_color_g="206" fill_color_b="166" near_zoom="10.000" name="{U47}" line_type="0" parent_layer_id="1000" />
+			</feature>		
+			<feature id="natural">
+				<layer id="bay" layerid="11601" type="3" near_zoom="10.000" name="{H905}" parent_layer_id="10300" />
+				<layer id="beach" layerid="11602" type="3" near_zoom="4.000" name="{U40}" icon="9357" parent_layer_id="10300" />
+				<layer id="acave" layerid="11603" type="3" near_zoom="2.000" name="{H906}" icon="grotte" parent_layer_id="10300" />				
+				<layer id="cliff" layerid="11604" type="3" near_zoom="2.000" name="{U287}" icon="col" parent_layer_id="10300" />		
+				<layer id="natural_coastline" layerid="11605" color_g="134" color_b="255" pixel_thickness="2" name="{U176}" line_type="0" parent_layer_id="10400" />
+				<layer id="natural_heath" layerid="11609" type="1" color_r="205" color_g="195" color_b="115" fill_color_r="205" fill_color_g="198" fill_color_b="115" near_zoom="150.000" name="{H885}" line_type="0" parent_layer_id="1000" />
+				<layer id="natural_water" layerid="11621" type="1" color_r="92" color_g="172" color_b="238" fill_color_r="92" fill_color_g="172" fill_color_b="238" near_zoom="50.000" name="{U39}" line_type="0" parent_layer_id="1000" />				
+				<layer id="natural_wood" layerid="11623" type="1" color_r="134" color_g="198" color_b="124" fill_color_r="134" fill_color_g="198" fill_color_b="124" near_zoom="150.000" name="{U262}" line_type="0" parent_layer_id="1000" />
+			</feature>
+			<feature id="railway">
+				<layer id="railway_rail" layerid="12101" near_zoom="60.000" pixel_thickness="2" name="{U13}" line_type="9" parent_layer_id="16000" />
+				<layer id="railway_turntable" layerid="12102" near_zoom="60.000" pixel_thickness="2" name="{U13}" line_type="9" parent_layer_id="16000" />
+				<layer id="railway_station" layerid="12103" type="3" near_zoom="15.000" name="station" icon="7380" parent_layer_id="10300" />
+			</feature>
+			<feature id="route">
+				<layer id="route_ferry" layerid="12201" color_g="134" color_b="255" name="{U61}" line_type="2" usable_routing="4" max_speed="5" route_param="true" parent_layer_id="16000" />
+			</feature>
+			<feature id="tourism">
+				<layer id="attraction" layerid="12502" type="3" near_zoom="2.000" name="{U100}" icon="7337" parent_layer_id="10300" />		
+				<layer id="camp_site" layerid="12504" type="3" near_zoom="2.000" name="{U239}" icon="7360" parent_layer_id="10300" />
+				<layer id="chalet" layerid="12506" type="3" near_zoom="2.000" name="{H910}" icon="7365" parent_layer_id="10300" />
+				<layer id="guest_house" layerid="12507" type="3" near_zoom="2.000" name="{H911}" icon="7314" parent_layer_id="10300" />
+				<layer id="hostel" layerid="12508" type="3" near_zoom="2.000" name="{H912}" icon="7314" parent_layer_id="10300" />			
+				<layer id="hotel" layerid="12509" type="3" near_zoom="2.000" name="{U98}" icon="7314" parent_layer_id="10300" />
+				<layer id="museum" layerid="12512" type="3" near_zoom="2.000" name="{U124}" icon="7377" parent_layer_id="10300" />			
+				<layer id="picnic_site" layerid="12513" type="3" near_zoom="2.000" name="{U317}" icon="7395" parent_layer_id="10300" />
+				<layer id="viewpoint" layerid="12515" type="3" near_zoom="2.000" name="{U246}" icon="7337" parent_layer_id="10300" />			
+			</feature>			
+			<feature id="shop">
+				<layer id="supermarket" layerid="12550" type="3" near_zoom="2.000" name="supermarket" icon="9361" parent_layer_id="10300" />			
+			</feature>			
+			<feature id="waterway">
+				<layer id="waterway_river" layerid="12601" color_r="81" color_g="144" color_b="237" near_zoom="100.000" pixel_thickness="2" name="{N46}" line_type="0" parent_layer_id="16000" />
+				<layer id="waterway_riverbank" layerid="12602" color_r="81" color_g="144" color_b="200" near_zoom="100.000" pixel_thickness="2" name="{N46}" line_type="0" parent_layer_id="16000" />
+				<layer id="waterway_drain" layerid="12603" color_r="92" color_g="172" color_b="238" near_zoom="15.000" real_thickness="1" name="{U39}" line_type="0" parent_layer_id="16000" />
+				<layer id="tunnel_waterway_drain" layerid="12603" color_r="92" color_g="178" color_b="238" near_zoom="15.000" real_thickness="1" name="{U39}" line_type="2" parent_layer_id="16000" />
+				<layer id="waterway_stream" layerid="12604" color_r="92" color_g="172" color_b="238" near_zoom="15.000" real_thickness="1" name="{U39}" line_type="0" parent_layer_id="16000" />
+				<layer id="tunnel_waterway_stream" layerid="12604" color_r="92" color_g="178" color_b="238" near_zoom="15.000" real_thickness="1" name="{U39}" line_type="2" parent_layer_id="16000" />
+				<layer id="waterway_canal" layerid="12605" color_r="92" color_g="172" color_b="238" near_zoom="15.000" real_thickness="1" name="{H916}" line_type="0" parent_layer_id="16000" />
+				<layer id="tunnel_waterway_canal" layerid="12605" color_r="92" color_g="178" color_b="238" near_zoom="15.000" real_thickness="1" name="{H916}" line_type="2" parent_layer_id="16000" />
+				<layer id="waterway_ditch" layerid="12606" color_r="92" color_g="172" color_b="238" near_zoom="15.000" real_thickness="1" name="{H916}" line_type="0" parent_layer_id="16000" />
+				<layer id="tunnel_waterway_ditch" layerid="12606" color_r="92" color_g="178" color_b="238" near_zoom="15.000" real_thickness="1" name="{H916}" line_type="2" parent_layer_id="16000" />			
+			</feature>				
+		</layer_type>
+		<layer_type id="non-physical">
+			<feature id="properties">			
+				<layer id="default" layerid="16380" visible="-1" pixel_thickness="0" name="{H917}" line_type="0" parent_layer_id="16000" />
+			</feature>			
+		</layer_type>	
+	</layers>		
+</osm>
