@@ -57,7 +57,7 @@
 	int left=0;
 	int right=vp.size();
 
-	while (left <= right) {
+	while (left < right) {
 		int middle = (left + right) / 2;
 		if (vp[middle].getPid() == v_node.GetId()){
 			return true;

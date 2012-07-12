@@ -1,6 +1,6 @@
 Welcome to CompeGPS CompePlugin_OSMVect!
 -----------------------------------------
 
-This plugins is used to parse OSM files into compeGPS Land and Ais applications
+This plugin is used to parse OSM files into compeGPS Land and Air applications
 
 * **CompeGPS:** http://compegps.com
