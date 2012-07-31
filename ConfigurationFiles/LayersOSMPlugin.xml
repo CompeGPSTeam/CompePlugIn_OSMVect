@@ -182,7 +182,7 @@
 			<feature id="natural">
 				<layer id="bay" layerid="11601" type="3" near_zoom="10.000" name="{H905}" parent_layer_id="10300" />
 				<layer id="beach" layerid="11602" type="3" near_zoom="4.000" name="{U40}" icon="9357" parent_layer_id="10300" />
-				<layer id="acave" layerid="11603" type="3" near_zoom="2.000" name="{H906}" icon="grotte" parent_layer_id="10300" />				
+				<layer id="cave_entrance" layerid="11603" type="3" near_zoom="2.000" name="{H906}" icon="grotte" parent_layer_id="10300" />				
 				<layer id="cliff" layerid="11604" type="3" near_zoom="2.000" name="{U287}" icon="col" parent_layer_id="10300" />		
 				<layer id="natural_coastline" layerid="11605" color_g="134" color_b="255" pixel_thickness="2" name="{U176}" line_type="0" parent_layer_id="10400" />
 				<layer id="natural_heath" layerid="11609" type="1" color_r="205" color_g="195" color_b="115" fill_color_r="205" fill_color_g="198" fill_color_b="115" near_zoom="150.000" name="{H885}" line_type="0" parent_layer_id="1000" />
